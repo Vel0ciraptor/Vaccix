@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaccix</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+    <script src="script.js" defer></script>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+        <!--=============== HEADER PROFILE ===============-->
+        <header class="container">
+            <div class="nav">
+            <nav class="navbar">
+                <a  href="#" >
+                    <h4 class="logo">Vaccix</h4>
+                </a>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            </div>
+            <div class="profile__container grid">
+                <div class="card__music">
+                    <div class="player">
+                        <div class="wrapper">
+                            <div class="details">
+                                <div class="now-playing">PLAYING x OF y</div>
+                                <div class="track-art"></div>
+                                <div class="track-name">Track Name</div>
+                                <div class="track-artist">Track Artist</div>
+                            </div>
+
+                            <div class="slider_container">
+                                <div class="current-time">00:00</div>
+                                <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+                                <div class="total-duration">00:00</div>
+                            </div>
+
+                            <div class="slider_container">
+                                <i class="fa fa-volume-down"></i>
+                                <input type="range" min="1" max="100" value="99" class="volume_slider" onchange="setVolume()">
+                                <i class="fa fa-volume-up"></i>
+                            </div>
+                    
+                            <div class="buttons">
+                                
+                                <div class="prev-track" onclick="prevTrack()">
+                                    <i class="fa fa-step-backward fa-2x"></i>
+                                </div>
+                                <div class="playpause-track" onclick="playpauseTrack()">
+                                    <i class="fa fa-play-circle fa-5x"></i>
+                                </div>
+                                <div class="next-track" onclick="nextTrack()">
+                                    <i class="fa fa-step-forward fa-2x"></i>
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="profile__info">
+                    <div class="profile__info-group">
+                            <h3 class="profile__info-number">+288k</h3>
+                            <p class="profile__info-description">Reproducciones</p>
+                        </div>
+                    
+                    <div class="profile__info-group">
+                        <h3 class="profile__info-number">+42k</h3>
+                        <p class="profile__info-description">Oyentes</p>
+                    </div>
+                    
+                    <div class="profile__info-group">
+                        <h3 class="profile__info-number">+12k</h3>
+                        <p class="profile__info-description">Horas</p>
+                    </div>
+                    <div class="profile__info-group">
+                        <h3 class="profile__info-number">+91</h3>
+                        <p class="profile__info-description">Países</p>
+                    </div>
+
+                <ul class="profile__social">
+                    <a href="https://instagram.com/vaccix/" target= "_blank" class="profile__social-link"> 
+                        <i class="ri-instagram-line"></i>   
+                    </a>
+                    <a href="https://www.youtube.com/@vaccix8336" target= "_blank" class="profile__social-link"> 
+                        <i class="ri-youtube-line"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@vaccix" target= "_blank" class="profile__social-link">
+                        <i class="ri-music-line"></i>    
+                    </a>
+                    <a href="https://twitter.com/vaccixx" target= "_blank" class="profile__social-link">
+                        <i class="ri-twitter-line"></i> 
+                    </a>
+                </ul>
+                <div class="profile__buttons">
+                    <a href="https://open.spotify.com/artist/0BW2fNxPUjTmidG1SgnK8X?si=BPmStp7nQSSvV6yL_3PZFQ&utm_medium=share&utm_source=linktree&nd=1" class="button">
+                        Escucha mas musica en <i class="ri-spotify-line"></i>
+                    </a>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </header>
+
+        <seccion class="about" id="about">
+            <div class="about-container">
+                <div class="about-text">
+                    <h1>About Us</h1>
+                    <h5>Cantante &<span> Compositor </span></h5>
+                    <p>22 años <BR>compone trap y su música es de exportación <br>
+                        La cruceña tiene una de las propuestas más novedosas del escenario nacional. 
+                    </p>
+                </div>   
+                <div class="aboutimg">
+                    <img src="img/img5.PNG" alt="">
+                </div>
+            </div>
+
+        </seccion>
+
+        <seccion class="contact" id="contact">
+            <div class="Pcaja">
+                <ul class="profile__social">
+                    <a href="https://instagram.com/vaccix/" target= "_blank" class="profile__social-link"> 
+                        <i class="ri-instagram-line"></i>   
+                    </a>
+                    <a href="https://www.youtube.com/@vaccix8336" target= "_blank" class="profile__social-link"> 
+                        <i class="ri-youtube-line"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@vaccix" target= "_blank" class="profile__social-link">
+                        <i class="ri-music-line"></i>    
+                    </a>
+                    <a href="https://twitter.com/vaccixx" target= "_blank" class="profile__social-link">
+                        <i class="ri-twitter-line"></i> 
+                    </a>
+                </ul>
+                <div class="profile__buttons">
+                    <a href="https://open.spotify.com/artist/0BW2fNxPUjTmidG1SgnK8X?si=BPmStp7nQSSvV6yL_3PZFQ&utm_medium=share&utm_source=linktree&nd=1" class="button">
+                        Escucha mas musica en <i class="ri-spotify-line"></i>
+                    </a>
+                    </div>
+            </div>
+            <div id="Gcaja">
+                <div class="formulario">
+                    <form action="">
+                        
+                        <div class="grupo">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" class="formacontenedor">
+                        </div>
+                        <div class="grupo">
+                            <label for="apellido">Apellido</label>
+                            <input type="text" class="formacontenedor">
+                        </div>
+                        <div class="grupo">
+                            <label for="correo">Correo Electronico</label>
+                            <input type="text" class="formacontenedor">
+                        </div>
+                        
+                        <button class="btn">Ingresa</button>
+                    </div>
+                </form>
+            </div>
+            
+        </seccion>
+        <footer id="footer">
+                <h5>Todos los derechos de la programacion de la pagina son de Oscar J Zabala G.</h5>
+        </footer>
+</body>
+</html>
